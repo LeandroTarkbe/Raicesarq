@@ -1,0 +1,245 @@
+body{
+    main{
+        .trabajos{
+            display: grid; 
+            grid-template-columns: 33.3% 33.3% 33.3%; 
+            grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto; 
+            gap: 0.05rem 0.05rem; 
+            grid-template-areas: 
+            "tImg1 tImg1 tImg1"
+            "tImg1 tImg1 tImg1"
+            "tImg2 tImg3 tImg4"
+            "tImg5 tImg6 textoLote41"
+            "tImg7 tImg8 tImg9"
+            "tImg10 tImg11 tImg12"
+            "tImg13 textoEstudio tImg14"
+            "timg15 timg15 textoCastillo"
+            "timg15 timg15 textoCastillo"
+            "tImg16 tImg16 tImg16"
+            "tImg16 tImg16 tImg16"
+            "tImg17 tImg18 tImg19"
+            "textoLM textoLM textoLM"
+            "tImg20 tImg20 lote121Img2"
+            "tImg20 tImg20 lote121Img3";
+            @include mobile{
+                display: flex;
+                flex-direction: column;            
+            }
+
+            .tImg1 { 
+                grid-area: tImg1;
+                img{
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+            .tImg2 { 
+                grid-area: tImg2; 
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .timg3 { 
+                grid-area: tImg3;
+                img{
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+            .tImg4 { 
+                grid-area: tImg4;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg5 { 
+                grid-area: tImg5;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg6 { 
+                grid-area: tImg6;
+                img{
+                    width: 100%;
+                    height: 100%;
+                } 
+            }
+            .textoLote41 { 
+                grid-area: textoLote41;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size: 2rem;
+                    @include tablet{
+                        font-size: 1rem;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+                }                
+            }
+            .tImg7{
+                grid-area: tImg7;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg8{
+                grid-area: tImg8;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg9{
+                grid-area: tImg9;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg10{
+                grid-area: tImg10;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg11{
+                grid-area: tImg11;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg12{
+                grid-area: tImg12;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg13{
+                grid-area: tImg13;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }            
+            .tImg14{
+                grid-area: tImg14;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .timg15{
+                grid-area: timg15;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .textoEstudio{
+                grid-area: textoEstudio;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size: 2rem;
+                    @include tablet{
+                        font-size: 1rem;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+                } 
+            }
+            .textoCastillo{
+                grid-area: textoCastillo;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size: 2rem;
+                    @include tablet{
+                        font-size: 1rem;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+                } 
+            }
+            .tImg16{
+                grid-area: tImg16;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg17{
+                grid-area: tImg17;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg18{
+                grid-area: tImg18;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .tImg19{
+                grid-area: tImg19;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .textoLM{
+                grid-area: textoLM;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                    font-size: 2rem;
+                    @include tablet{
+                        font-size: 1rem;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+                }                 
+            }
+            .tImg20{
+                grid-area: tImg20;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .lote121Img2{
+                grid-area: lote121Img2;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .lote121Img3{
+                grid-area: lote121Img3;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }          
+        }       
+    }
+}

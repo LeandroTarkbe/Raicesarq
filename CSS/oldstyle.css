@@ -1,0 +1,850 @@
+/*RESETEO DE CÓDIGO*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS GENERALES*/
+
+/*ESTILOS DEL HEADER*/
+header{
+    background-color:#9ab6c8;
+    height: 6.5rem;
+    }
+    
+.titulos{
+    display: flex;
+    flex-wrap:wrap-reverse;
+    align-items: center;
+    }
+
+/*Diseño del NAV en el Header*/
+.navegador{
+    background-color: #2f3133;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0rem;
+    z-index: 99;
+}
+
+ul{
+    list-style:none;
+    list-style-image: none;
+    font-size: 1.30rem;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+li{
+    display: inline-block;
+    margin-inline: 0rem;
+    list-style: none
+    }
+
+a{
+    text-decoration: none;
+    font-weight:lighter;
+    color: white;
+    padding: 0.25rem;
+    margin: 0.05rem;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+/*Diseño de los Títulos en el Header*/
+h1{
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+}
+
+h3{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
+}
+
+header img{
+    width:6rem;
+    display: flex;
+}
+
+/*ESTILOS DEL MAIN*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+
+.videoIntro{
+    display: block;
+    justify-content: center;
+    }
+
+/*Estilo Servicios en el Inicio*/
+.serviciosMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1 auto;
+    gap: 15px;
+    justify-content: center;
+    height: auto;
+    box-shadow: 0 5px 7px rgba(154, 152, 152, 0.603);
+    padding: 2rem;
+    background-image:url(./img/prism.png);
+    border: none;
+    }    
+
+/*Proyecto y Dirección*/
+.proyectoYDireccion{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    }
+.proyectoYDireccion img{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    }
+.proyectoYDireccion h5{
+        text-align: center;
+        margin: 0.75rem;
+    }
+.proyectoYDireccion p{
+    margin: 0 auto;
+}
+
+/*Construcción*/
+.construccion{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    }
+.construccion img{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    }
+.construccion h5{
+        text-align: center;
+        margin: 0.75rem;
+    }
+.construccion p{
+    margin: 0 auto;
+}
+
+/*Desarrollo Inmobiliario*/
+.desarrolloInmobiliario{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    }
+.desarrolloInmobiliario img{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    }
+.desarrolloInmobiliario h5{
+        text-align: center;
+        margin: 0.75rem;
+    }
+.desarrolloInmobiliario p{
+    margin: 0 auto;
+}
+
+/*Gestión de Proyectos*/
+.gestionDeProyectos{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    }
+.gestionDeProyectos img{
+    width: 25%;
+    height: auto;
+    margin: 0 auto;
+    }
+.gestionDeProyectos h5{
+        text-align: center;
+        margin: 0.75rem;
+    }
+.gestionDeProyectos p{
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1.2rem;
+    font-family: 'Questrial';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+    font-weight: lighter;
+    text-align: justify;
+ }
+
+/*img {
+    width: 20%;
+    height: 20%;
+}*/
+
+video{
+    width: 50%;
+    padding: 1rem;
+}
+
+.parrafoMain {
+    line-height: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    align-self: center;
+    width: 50vw;
+}
+
+h5{
+    font-size: 1.2rem;
+    font-family: 'Questrial';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Estilos Nosotros*/
+.contenidoNosotros{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./img/prism.png);
+}
+.contenidoNosotros h3{
+    padding-left: 0%;
+    margin: 1rem;
+    color: white;
+    font-size: 1.3rem;
+}
+.contenidoNosotros img{
+    width: 100%;
+    height: 100%;
+}
+.contenidoNosotros p{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 95% !important;
+    height: 15rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+}
+form{
+    font-size: 1rem;
+    font-family: 'Questrial';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+    font-weight: lighter;
+}
+
+/*Estilos Servicios*/
+.servicios {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 1rem;
+    
+ } 
+
+ /*Servicios Proyecto y Direccion*/
+ .serviciosProyecto{
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto, auto;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0.25rem;
+ }
+ .proyectoImg{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: inline-block;     
+ }
+ .proyectoImg img{
+    width: 30%;
+    height: auto;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    display: flex;
+ }
+ .proyectoTitulo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+ }
+ .proyectoParrafo{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;   
+ }
+
+ /*Servicios Construcción y Remodelaciones*/
+ .serviciosConstruccion{
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto, auto;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0.25rem;
+ }
+ .construccionImg{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: inline-block;     
+ }
+ .construccionImg img{
+    width: 30%;
+    height: auto;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    display: flex;
+ }
+ .construccionTitulo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+ }
+ .construccionParrafo{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+/*Servicios Desarrollo Inmobiliario*/
+.serviciosDesarrollo{
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto, auto;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0.25rem;
+ }
+ .desarrolloImg{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: inline-block;     
+ }
+ .desarrolloImg img{
+    width: 30%;
+    height: auto;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    display: flex;
+ }
+ .desarrolloTitulo{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+ }
+ .desarrolloParrafo{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;   
+ }
+
+  /*Servicios Gestión de Proyectos*/
+  .serviciosGestion{
+    display: grid;
+    grid-template-columns: auto, auto;
+    grid-template-rows: auto, auto;
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 0.25rem;
+ }
+ .gestionImg{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: inline-block;     
+ }
+ .gestionImg img{
+    width: 30%;
+    height: auto;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    display: flex;
+ }
+ .gestionTitulo{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+ }
+ .gestionParrafo{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+  
+/*Trabajos*/
+.trabajos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 16, 100rem;
+}
+
+.trabajos img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.tImg1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.textoLote41{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    margin: 0 auto;
+    align-content: center;
+    padding-left: 0;
+}
+
+.tImg13{
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    
+}
+
+.tImg14{
+    grid-column: 40%;
+    grid-row: 8 / 9;
+}
+
+.timg15{
+    grid-column: 3 / 4;
+    grid-row: 7 / 9;
+}
+
+.tImg18{
+    grid-column: 1 / 3;
+}
+
+.textoEstudio{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1rem;
+margin: left;
+align-content: center;
+padding-left: 0;
+}
+
+.textoCastillo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-align: right;
+    align-content: center;
+    padding-left: 0;
+    }
+
+.tImg19{
+    grid-column: 2 / 4;
+    grid-row: 9 / 11; 
+}
+
+.textoLM{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    align-content: center;
+    padding-left: 0;
+    }
+
+.formulario {
+    padding: 10px;
+}
+
+.formulario form{
+    padding: 10px;
+}
+.formulario h3{
+    text-align: left;
+    padding-left: 0;
+}
+
+.mapa{
+    padding: 20px;
+}
+
+.whatsApp{
+    position:fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #25d366;
+    bottom: .8rem;
+    right: .8rem;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 99;
+    border: 1px #fff solid;
+}
+
+.fa-whatsapp{
+    font-size: 2.8rem;
+}
+
+/*ESTILOS CONTACTENOS*/
+.mapa iframe{
+    width: 100vw;
+}
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "contactenos"
+    "form";
+}
+.contactenos{
+    grid-area: contactenos;
+    margin-left: 3rem;
+}
+.col-md-12{
+    height: 10rem;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    background-color: #9ab6c8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: 0rem;
+    width: 100%;
+}
+
+.logoDelFooter {
+    display: inline-block;
+    width: 10%;
+    margin: 0.5rem;
+}
+.logoDelFooter img{
+    width: 100%;
+    height: auto;
+}
+.copyright{
+    margin-bottom: 0.1rem;  
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    margin: 1rem;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    }
+.instagram{
+    display: flex;
+    flex-direction: row;
+}
+.whatsApp2{
+    display: flex;
+    flex-direction: row;
+}
+.contacto img{
+    width: 1rem;
+    height: 1rem;
+   }
+.contacto p{
+    font-family: 'Questrial';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
+    text-align: left;
+    margin-right: 0.2rem;
+    }
+h4{
+    font-size: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: slategrey;
+    font-weight: bold;
+    text-align:center;   
+    margin-top: 5rem;
+}
+
+button{
+    padding: 1px;
+    margin: 1px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:768px) {
+        
+    /*ESTILOS DEL HEADER*/
+header{
+    height: 4rem;
+    }
+
+/*Diseño del NAV en el Header*/
+ul{
+    font-size: 1.00rem;
+    }
+
+/*Diseño de los Títulos en el Header*/
+h1{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 0.8rem;
+}
+header img{
+    width:5rem;
+}
+
+/*ESTILOS DEL MAIN*/
+.videoIntro{
+    display: flex;
+    justify-content: center;
+    }
+
+/*Estilo Servicios en el Inicio*/
+.serviciosMain{
+    gap: 6px;
+    padding: 1.5rem;
+    }    
+
+/*Proyecto y Dirección*/
+.proyectoYDireccion{
+    padding: 0.8rem;
+    margin: 0.8rem;
+    }
+.proyectoYDireccion h5{
+        margin: 0.7rem;
+    }
+
+/*Construcción*/
+.construccion{
+    padding: 0.75rem;
+    margin: 0.75rem;
+    }
+.construccion h5{
+        margin: 0.7rem;
+    }
+
+/*Desarrollo Inmobiliario*/
+.desarrolloInmobiliario{
+    padding: 0.75rem;
+    margin: 0.75rem;
+    }
+.desarrolloInmobiliario h5{
+        margin: 0.7rem;
+    }
+
+/*Gestión de Proyectos*/
+.gestionDeProyectos{
+    padding: 0.75rem;
+    margin: 0.75rem;
+    }
+.gestionDeProyectos h5{
+        margin: 0.7rem;
+    }
+
+p{
+    font-size: 1rem;
+    text-align: justify;
+ }
+
+.parrafoMain {
+    line-height: 1.5rem;
+    flex-direction: column;
+}
+
+h5{
+    font-size: 1rem;
+}
+
+/*Estilos Nosotros*/
+.contenidoNosotros h3{
+    margin: 0.8rem;
+    font-size: 1.1rem;
+}
+.contenidoNosotros p{
+    font-size: 1.1rem;
+}
+
+/*Estilos Servicios*/
+.servicios {
+    margin: 0.8rem;  
+ } 
+
+ /*Servicios Proyecto y Direccion*/
+ .serviciosProyecto{
+    padding: 1.75rem;
+ }
+
+ /*Servicios Construcción y Remodelaciones*/
+ .serviciosConstruccion{
+    padding: 1.75rem;
+ }
+
+/*Servicios Desarrollo Inmobiliario*/
+.serviciosDesarrollo{
+    padding: 1.75rem;
+ }
+
+  /*Servicios Gestión de Proyectos*/
+  .serviciosGestion{
+    padding: 1.75rem;
+ }
+  
+
+.mapa{
+    padding: 10px;
+}
+
+.whatsApp{
+    width: 3rem;
+    height: 3rem;
+    bottom: .7rem;
+    right: .7rem;
+}
+
+.fa-whatsapp{
+    font-size: 2.2rem;
+}
+
+}
+@media screen and (max-width:480px) {
+    /*ESTILOS GENERALES*/
+
+/*ESTILOS DEL HEADER*/
+header{
+    height: 8rem;
+    }
+    
+.titulos{
+    justify-content: center;
+    }
+
+/*Diseño del NAV en el Header*/
+ul{
+    font-size: 1rem;
+    font-weight: 150;
+    }
+li{
+    justify-content: center
+    }
+
+/*ESTILOS DEL MAIN*/
+
+/*Estilo Servicios en el Inicio*/
+.serviciosMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4 auto;
+    gap: 10px;
+    padding: 1rem;
+    }    
+
+.parrafoMain {
+    line-height: 1.5rem;
+    padding: 1rem;
+    width: 95vw;
+}
+
+/*Estilos Nosotros*/
+.contenidoNosotros h3{
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+.contenidoNosotros p{
+    height: 10rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+/*Estilos Servicios*/
+.servicios {
+    padding: 0.5rem;
+    margin: 0.3rem;    
+ }
+
+ /*Servicios Proyecto y Direccion*/
+ .serviciosProyecto{
+    padding: 0.5rem;
+ }
+ .proyectoImg img{
+    width: 95%;
+ }
+ .proyectoParrafo p{
+    font-size: 0.6rem;
+ }
+ /*Servicios Construcción y Remodelaciones*/
+ .construccionImg img{
+    width: 115%;
+ }
+ .construccionParrafo p{
+    font-size: 0.6rem;
+}
+
+/*Servicios Desarrollo Inmobiliario*/
+ .desarrolloImg img{
+    width: 95%;
+ }
+ .desarrolloParrafo p{
+    font-size: 0.6rem;   
+ }
+
+  /*Servicios Gestión de Proyectos*/
+ .gestionImg img{
+    width: 100%;
+ }
+ .gestionParrafo p{
+    font-size: 0.6rem;
+}
+  
+/*Trabajos*/
+.trabajos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 24, auto;
+}
+.trabajos img{
+    height: auto;
+}
+.tImg1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.textoLote41{
+    font-size: 0.5rem;
+}
+
+.whatsApp{
+    display: none;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer{
+    flex-direction: column;
+    justify-content: center;
+}
+.logoDelFooter {
+    width: 25%;
+    margin: 0.5rem;
+    align-self: center;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100vw;
+    margin: 0.2rem;
+}
+h4{
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+}    
+}

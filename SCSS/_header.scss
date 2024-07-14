@@ -1,0 +1,144 @@
+
+/*VARIABLES*/
+$background-color-1:#9ab6c8;
+$background-color-2:#2f3133;
+
+
+header{
+    background-color: $background-color-1;
+    height: 6.5rem;
+    width: 100vw;
+    @include mobile{
+        height: 8.5rem;
+    }
+    .titulos{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+        }        
+        img{
+            width: 6rem;
+            display: flex;
+            @include mobile{
+                justify-content: center;
+                width: 4rem;
+            }
+        }
+        h1{
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 10%;
+            @include mobile{
+                font-size:1.5rem;
+                padding: 0;
+                text-align: center;
+            }
+        }
+        h3{
+            font-size: 1rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-left: 10%;
+            @include mobile{
+                font-size: 0.75rem;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.navegador{
+    background-color: $background-color-2;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0rem;
+    z-index: 99;
+    @include tablet{
+        padding: 0.25em;
+        justify-content: center;
+    }
+    @include mobile{
+        justify-content: right;
+        height: 100%;
+        position: relative;
+        top:0rem;
+        flex-wrap: wrap;
+    }  
+    nav{
+        .labelHamburguesa{
+            color: white;
+            display: none;
+            &:hover{
+                background-color: black;
+                color: white;
+                border-radius: 10%;
+            }
+            @include mobile{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: right;
+            }
+
+        } 
+        .menuHamburguesa{
+            display: none;
+        }
+        .menuHamburguesa:checked + .ul_links {
+            height: calc(100vh - 2.5rem);
+        } 
+        .ul_links{
+            list-style: none;
+            list-style-image: none;
+            font-size: 1.30rem;
+            font-weight: 200;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            height: 1rem;
+            @include tablet{
+                font-size: 1rem;
+                font-weight: 100;
+                height: 0.75rem;
+            }
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                margin-top:0;
+                padding: 0.5rem;
+                position: absolute;
+                top:3rem;
+                right: 0;
+                gap: 1.5rem;
+                justify-content: right;
+                transition: all 0.5s;
+                border-radius: .25rem;
+                background-color: #2f3133;
+            }
+            li{
+                display: inline-block;
+                margin-inline: 0rem;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-weight: lighter;
+                    color:white;
+                    padding: 0.25rem;
+                    margin: 0.05rem;
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        border-radius: 10%;
+                    }
+                    @include tablet{
+                        padding: 0.1rem;
+                        margin: 0rem;    
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1182 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*VARIABLES*/
+header {
+  background-color: #9ab6c8;
+  height: 6.5rem;
+  width: 100vw;
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 8.5rem;
+  }
+}
+header .titulos {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  header .titulos {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+header .titulos img {
+  width: 6rem;
+  display: flex;
+}
+@media screen and (max-width: 480px) {
+  header .titulos img {
+    justify-content: center;
+    width: 4rem;
+  }
+}
+header .titulos h1 {
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+}
+@media screen and (max-width: 480px) {
+  header .titulos h1 {
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+  }
+}
+header .titulos h3 {
+  font-size: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 10%;
+}
+@media screen and (max-width: 480px) {
+  header .titulos h3 {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.navegador {
+  background-color: #2f3133;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0rem;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) {
+  .navegador {
+    padding: 0.25em;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navegador {
+    justify-content: right;
+    height: 100%;
+    position: relative;
+    top: 0rem;
+    flex-wrap: wrap;
+  }
+}
+.navegador nav .labelHamburguesa {
+  color: white;
+  display: none;
+}
+.navegador nav .labelHamburguesa:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+}
+@media screen and (max-width: 480px) {
+  .navegador nav .labelHamburguesa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+}
+.navegador nav .menuHamburguesa {
+  display: none;
+}
+.navegador nav .menuHamburguesa:checked + .ul_links {
+  height: calc(100vh - 2.5rem);
+}
+.navegador nav .ul_links {
+  list-style: none;
+  list-style-image: none;
+  font-size: 1.3rem;
+  font-weight: 200;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .navegador nav .ul_links {
+    font-size: 1rem;
+    font-weight: 100;
+    height: 0.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navegador nav .ul_links {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 0;
+    padding: 0.5rem;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    gap: 1.5rem;
+    justify-content: right;
+    transition: all 0.5s;
+    border-radius: 0.25rem;
+    background-color: #2f3133;
+  }
+}
+.navegador nav .ul_links li {
+  display: inline-block;
+  margin-inline: 0rem;
+  list-style: none;
+}
+.navegador nav .ul_links li a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: white;
+  padding: 0.25rem;
+  margin: 0.05rem;
+}
+.navegador nav .ul_links li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+}
+@media screen and (max-width: 768px) {
+  .navegador nav .ul_links li a {
+    padding: 0.1rem;
+    margin: 0rem;
+  }
+}
+
+.whatsApp {
+  position: fixed;
+  width: 3.15rem;
+  height: 3.15rem;
+  background-color: #25d366;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 99;
+  border: 1px #fff solid;
+}
+.whatsApp .fa-whatsapp {
+  font-size: 2.8rem;
+  padding: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .whatsApp {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whatsApp {
+    display: none;
+  }
+}
+
+body main .contenidoNosotros {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/prism.png);
+}
+body main .contenidoNosotros h3 {
+  padding-left: 0%;
+  margin: 1rem;
+  color: white;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  body main .contenidoNosotros h3 {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .contenidoNosotros h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+body main .contenidoNosotros img {
+  width: 100%;
+  height: 100%;
+}
+body main .contenidoNosotros p {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding-left: 0;
+  padding-right: 0;
+  width: 95%;
+  height: 15rem;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  body main .contenidoNosotros p {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .contenidoNosotros p {
+    font-size: 0.75rem;
+    height: auto;
+    padding: 0.25rem;
+  }
+}
+
+body main .servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+body main .servicios .serviciosProyecto {
+  display: grid;
+  grid-template-columns: auto, auto;
+  grid-template-rows: auto, auto;
+  background-color: #2f3133;
+  padding: 2rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosProyecto {
+    padding: 1rem;
+    margin: 0.1rem;
+  }
+}
+body main .servicios .serviciosProyecto .proyectoImg {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0.25rem;
+}
+body main .servicios .serviciosProyecto .proyectoImg img {
+  width: 40%;
+  height: auto;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosProyecto .proyectoImg img {
+    width: 50%;
+    padding: 0.15rem;
+    margin: 0.15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosProyecto .proyectoImg img {
+    display: none;
+  }
+}
+body main .servicios .serviciosProyecto .proyectoTitulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body main .servicios .serviciosProyecto .proyectoTitulo h5 {
+  font-family: "Questrial";
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+body main .servicios .serviciosProyecto .proyectoTitulo h5:hover {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosProyecto .proyectoTitulo h5 {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  body main .servicios .serviciosProyecto .proyectoTitulo h5:hover {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosProyecto .proyectoTitulo h5 {
+    font-size: 1.15rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  body main .servicios .serviciosProyecto .proyectoTitulo h5:hover {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+}
+body main .servicios .serviciosProyecto .proyectoParrafo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body main .servicios .serviciosProyecto .proyectoParrafo p {
+  font-family: "Questrial";
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosProyecto .proyectoParrafo p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosProyecto .proyectoParrafo p {
+    font-size: 0.7rem;
+  }
+}
+body main .servicios .serviciosConstruccion {
+  display: grid;
+  grid-template-columns: auto, auto;
+  grid-template-rows: auto, auto;
+  background-color: #2f3133;
+  padding: 2rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosConstruccion {
+    padding: 1rem;
+    margin: 0.1rem;
+  }
+}
+body main .servicios .serviciosConstruccion .construccionImg {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+body main .servicios .serviciosConstruccion .construccionImg img {
+  width: 70%;
+  height: auto;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosConstruccion .construccionImg img {
+    width: 80%;
+    padding: 0.15rem;
+    margin: 0.15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosConstruccion .construccionImg img {
+    display: none;
+  }
+}
+body main .servicios .serviciosConstruccion .construccionTitulo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body main .servicios .serviciosConstruccion .construccionTitulo h5 {
+  font-family: "Questrial";
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+body main .servicios .serviciosConstruccion .construccionTitulo h5:hover {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosConstruccion .construccionTitulo h5 {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  body main .servicios .serviciosConstruccion .construccionTitulo h5:hover {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  body main .servicios .serviciosConstruccion .construccionTitulo h5 {
+    font-size: 1.15rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  body main .servicios .serviciosConstruccion .construccionTitulo h5:hover {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+}
+body main .servicios .serviciosConstruccion .construccionParrafo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+body main .servicios .serviciosConstruccion .construccionParrafo p {
+  font-family: "Questrial";
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosConstruccion .construccionParrafo p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosConstruccion .construccionParrafo p {
+    font-size: 0.7rem;
+  }
+}
+body main .servicios .serviciosDesarrollo {
+  display: grid;
+  grid-template-columns: auto, auto;
+  grid-template-rows: auto, auto;
+  background-color: #2f3133;
+  padding: 2rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosDesarrollo {
+    padding: 1rem;
+    margin: 0.1rem;
+  }
+}
+body main .servicios .serviciosDesarrollo .desarrolloImg {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+body main .servicios .serviciosDesarrollo .desarrolloImg img {
+  width: 40%;
+  height: auto;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosDesarrollo .desarrolloImg img {
+    width: 50%;
+    padding: 0.15rem;
+    margin: 0.15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosDesarrollo .desarrolloImg img {
+    display: none;
+  }
+}
+body main .servicios .serviciosDesarrollo .desarrolloTitulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body main .servicios .serviciosDesarrollo .desarrolloTitulo h5 {
+  font-family: "Questrial";
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+body main .servicios .serviciosDesarrollo .desarrolloTitulo h5:hover {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosDesarrollo .desarrolloTitulo h5 {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  body main .servicios .serviciosDesarrollo .desarrolloTitulo h5:hover {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosDesarrollo .desarrolloTitulo h5 {
+    font-size: 1.15rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  body main .servicios .serviciosDesarrollo .desarrolloTitulo h5:hover {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+}
+body main .servicios .serviciosDesarrollo .desarrolloParrafo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+body main .servicios .serviciosDesarrollo .desarrolloParrafo p {
+  font-family: "Questrial";
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosDesarrollo .desarrolloParrafo p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosDesarrollo .desarrolloParrafo p {
+    font-size: 0.7rem;
+  }
+}
+body main .servicios .serviciosGestion {
+  display: grid;
+  grid-template-columns: auto, auto;
+  grid-template-rows: auto, auto;
+  background-color: #2f3133;
+  padding: 2rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosGestion {
+    padding: 1rem;
+    margin: 0.1rem;
+  }
+}
+body main .servicios .serviciosGestion .gestionImg {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+body main .servicios .serviciosGestion .gestionImg img {
+  width: 65%;
+  height: auto;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosGestion .gestionImg img {
+    width: 80%;
+    padding: 0.15rem;
+    margin: 0.15rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosGestion .gestionImg img {
+    display: none;
+  }
+}
+body main .servicios .serviciosGestion .gestionTitulo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body main .servicios .serviciosGestion .gestionTitulo h5 {
+  font-family: "Questrial";
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+}
+body main .servicios .serviciosGestion .gestionTitulo h5:hover {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosGestion .gestionTitulo h5 {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+  body main .servicios .serviciosGestion .gestionTitulo h5:hover {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosGestion .gestionTitulo h5 {
+    font-size: 1.15rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  body main .servicios .serviciosGestion .gestionTitulo h5:hover {
+    font-size: 1.25rem;
+    font-weight: 200;
+  }
+}
+body main .servicios .serviciosGestion .gestionParrafo {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+body main .servicios .serviciosGestion .gestionParrafo p {
+  font-family: "Questrial";
+  font-size: 1.2rem;
+  text-align: justify;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  body main .servicios .serviciosGestion .gestionParrafo p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .servicios .serviciosGestion .gestionParrafo p {
+    font-size: 0.7rem;
+  }
+}
+
+body main .trabajos {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  gap: 0.05rem 0.05rem;
+  grid-template-areas: "tImg1 tImg1 tImg1" "tImg1 tImg1 tImg1" "tImg2 tImg3 tImg4" "tImg5 tImg6 textoLote41" "tImg7 tImg8 tImg9" "tImg10 tImg11 tImg12" "tImg13 textoEstudio tImg14" "timg15 timg15 textoCastillo" "timg15 timg15 textoCastillo" "tImg16 tImg16 tImg16" "tImg16 tImg16 tImg16" "tImg17 tImg18 tImg19" "textoLM textoLM textoLM" "tImg20 tImg20 lote121Img2" "tImg20 tImg20 lote121Img3";
+}
+@media screen and (max-width: 480px) {
+  body main .trabajos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body main .trabajos .tImg1 {
+  grid-area: tImg1;
+}
+body main .trabajos .tImg1 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg2 {
+  grid-area: tImg2;
+}
+body main .trabajos .tImg2 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .timg3 {
+  grid-area: tImg3;
+}
+body main .trabajos .timg3 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg4 {
+  grid-area: tImg4;
+}
+body main .trabajos .tImg4 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg5 {
+  grid-area: tImg5;
+}
+body main .trabajos .tImg5 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg6 {
+  grid-area: tImg6;
+}
+body main .trabajos .tImg6 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .textoLote41 {
+  grid-area: textoLote41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .trabajos .textoLote41 h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  body main .trabajos .textoLote41 h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .trabajos .textoLote41 h2 {
+    display: none;
+  }
+}
+body main .trabajos .tImg7 {
+  grid-area: tImg7;
+}
+body main .trabajos .tImg7 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg8 {
+  grid-area: tImg8;
+}
+body main .trabajos .tImg8 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg9 {
+  grid-area: tImg9;
+}
+body main .trabajos .tImg9 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg10 {
+  grid-area: tImg10;
+}
+body main .trabajos .tImg10 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg11 {
+  grid-area: tImg11;
+}
+body main .trabajos .tImg11 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg12 {
+  grid-area: tImg12;
+}
+body main .trabajos .tImg12 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg13 {
+  grid-area: tImg13;
+}
+body main .trabajos .tImg13 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg14 {
+  grid-area: tImg14;
+}
+body main .trabajos .tImg14 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .timg15 {
+  grid-area: timg15;
+}
+body main .trabajos .timg15 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .textoEstudio {
+  grid-area: textoEstudio;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .trabajos .textoEstudio h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  body main .trabajos .textoEstudio h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .trabajos .textoEstudio h2 {
+    display: none;
+  }
+}
+body main .trabajos .textoCastillo {
+  grid-area: textoCastillo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .trabajos .textoCastillo h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  body main .trabajos .textoCastillo h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .trabajos .textoCastillo h2 {
+    display: none;
+  }
+}
+body main .trabajos .tImg16 {
+  grid-area: tImg16;
+}
+body main .trabajos .tImg16 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg17 {
+  grid-area: tImg17;
+}
+body main .trabajos .tImg17 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg18 {
+  grid-area: tImg18;
+}
+body main .trabajos .tImg18 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .tImg19 {
+  grid-area: tImg19;
+}
+body main .trabajos .tImg19 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .textoLM {
+  grid-area: textoLM;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .trabajos .textoLM h2 {
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  body main .trabajos .textoLM h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .trabajos .textoLM h2 {
+    display: none;
+  }
+}
+body main .trabajos .tImg20 {
+  grid-area: tImg20;
+}
+body main .trabajos .tImg20 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .lote121Img2 {
+  grid-area: lote121Img2;
+}
+body main .trabajos .lote121Img2 img {
+  width: 100%;
+  height: 100%;
+}
+body main .trabajos .lote121Img3 {
+  grid-area: lote121Img3;
+}
+body main .trabajos .lote121Img3 img {
+  width: 100%;
+  height: 100%;
+}
+
+body main .formulario .contactenos {
+  padding: 1.5rem;
+  margin: 0.25rem;
+}
+@media screen and (max-width: 480px) {
+  body main .formulario .contactenos {
+    padding: 0.5rem;
+  }
+}
+body main .formulario .contactenos h3 {
+  font-family: Questrial;
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  body main .formulario .contactenos h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .formulario .contactenos h3 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+body main .formulario .form {
+  padding: 0.5rem;
+  margin: 0.15rem;
+}
+body main .formulario .form .col-md-3 .form-control {
+  background-color: #2f3133;
+  color: white;
+  border: 1px solid black;
+}
+body main .formulario .form .col-md-12 .h-75 {
+  background-color: #2f3133;
+  color: white;
+  border: 1px solid black;
+}
+body main .formulario .form .col-12 .btn-primary {
+  background-color: #2f3133;
+  color: white;
+  border: 1px solid black;
+  margin-top: 1rem;
+}
+body main .mapa h5 {
+  padding: 1.5rem;
+  margin: 0.25rem;
+  font-family: Questrial;
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
+  body main .mapa h5 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+body main .mapa iframe {
+  width: 100vw;
+  margin-bottom: 1rem;
+  border: 2px solid #2f3133;
+}
+
+/*VARIABLES*/
+footer {
+  background-color: #9ab6c8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: auto;
+  margin-bottom: 0rem;
+  width: 100vw;
+}
+@media screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+footer .logoDelFooter {
+  display: inline-block;
+  width: 10%;
+  height: 7.5rem;
+  margin: 0.5rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 480px) {
+  footer .logoDelFooter {
+    width: 100vw;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+footer .logoDelFooter img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 20%;
+  padding: 0.3rem;
+}
+@media screen and (max-width: 480px) {
+  footer .logoDelFooter img {
+    width: 40%;
+  }
+}
+footer .copyright {
+  align-content: end;
+}
+footer .copyright h4 {
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  footer .copyright h4 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .copyright h4 {
+    text-align: center;
+  }
+}
+footer .contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto {
+    width: 30%;
+  }
+}
+footer .contacto .mail {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .mail {
+    height: 1.5rem;
+  }
+}
+footer .contacto .mail img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .mail img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+footer .contacto .mail p {
+  font-family: "Questrial";
+  text-align: left;
+  margin-right: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .mail p {
+    font-size: 0.8rem;
+  }
+}
+footer .contacto .instagram {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .instagram {
+    height: 1.5rem;
+  }
+}
+footer .contacto .instagram img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .instagram img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+footer .contacto .instagram p {
+  font-family: "Questrial";
+  text-align: left;
+  margin-right: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .instagram p {
+    font-size: 0.8rem;
+  }
+}
+footer .contacto .whatsApp2 {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .whatsApp2 {
+    height: 1.5rem;
+  }
+}
+footer .contacto .whatsApp2 img {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .whatsApp2 img {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+footer .contacto .whatsApp2 p {
+  font-family: "Questrial";
+  text-align: left;
+  margin-right: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  footer .contacto .whatsApp2 p {
+    font-size: 0.8rem;
+  }
+}
+
+body main .carouselslide {
+  display: block;
+  justify-content: center;
+  width: 100vw;
+}
+body main .parrafoMain {
+  display: grid;
+  font-size: 1.2rem;
+  font-family: "Questrial";
+  font-weight: lighter;
+  width: 100vw;
+  text-align: center;
+}
+body main .parrafoMain p {
+  justify-self: center;
+  margin: 4rem;
+}
+body main .serviciosMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1 auto;
+  gap: 15px;
+  justify-content: center;
+  height: auto;
+  box-shadow: 0 5px 7px rgba(154, 152, 152, 0.603);
+  padding: 2rem;
+  background-image: url(../img/prism.png);
+  border: none;
+  width: 100vw;
+}
+@media screen and (max-width: 768px) {
+  body main .serviciosMain {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2 auto;
+    gap: 10px;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main .serviciosMain {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4 auto;
+    gap: 5px;
+    padding: 0.5rem;
+  }
+}
+body main .serviciosMain .proyectoYDireccion, body main .serviciosMain .gestionDeProyectos, body main .serviciosMain .desarrolloInmobiliario, body main .serviciosMain .construccion {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+body main .serviciosMain .proyectoYDireccion img, body main .serviciosMain .gestionDeProyectos img, body main .serviciosMain .desarrolloInmobiliario img, body main .serviciosMain .construccion img {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+}
+body main .serviciosMain .proyectoYDireccion h5, body main .serviciosMain .gestionDeProyectos h5, body main .serviciosMain .desarrolloInmobiliario h5, body main .serviciosMain .construccion h5 {
+  text-align: center;
+  margin: 0.75rem;
+}
+body main .serviciosMain .proyectoYDireccion p, body main .serviciosMain .gestionDeProyectos p, body main .serviciosMain .desarrolloInmobiliario p, body main .serviciosMain .construccion p {
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+body{
+    main{
+        .formulario{
+            .contactenos{
+                padding: 1.5rem;
+                margin:0.25rem;
+                @include mobile{
+                    padding: 0.5rem;
+                }
+                h3{
+                    font-family: Questrial;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    @include tablet{
+                        font-size: 1.5rem;
+                    }
+                    @include mobile{
+                        text-decoration: none;
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .form{
+                padding: .5rem;
+                margin:.15rem;
+                .col-md-3{
+                    .form-control{
+                        background-color: #2f3133;
+                        color: white;
+                        border: 1px solid black;
+                    }          
+                }
+                .col-md-12{
+                    .h-75{
+                        background-color: #2f3133;
+                        color: white;
+                        border: 1px solid black;
+                    }
+                }
+                .col-12{
+                    .btn-primary{
+                        background-color: #2f3133;
+                        color: white;
+                        border: 1px solid black;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+        .mapa{
+            h5{
+                padding: 1.5rem;
+                margin:0.25rem;
+                font-family: Questrial;
+                font-weight: bold;
+                text-decoration: underline;
+                @include mobile{
+                    text-decoration: none;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+            iframe{
+                width: 100vw;
+                margin-bottom: 1rem;                
+                border: 2px solid #2f3133;
+            }
+        }
+    }
+}

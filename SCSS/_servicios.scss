@@ -1,0 +1,334 @@
+body{
+    main{
+        .servicios{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            margin: 1rem;
+            .serviciosProyecto{
+                display: grid;
+                grid-template-columns: auto, auto;
+                grid-template-rows: auto, auto;
+                background-color: #2f3133;
+                padding: 2rem;
+                margin: 0.25rem;
+                @include tablet{
+                    padding: 1rem;
+                    margin: 0.1rem;
+                }
+                .proyectoImg{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 3;
+                    display: flex;
+                    justify-content: left;
+                    align-items:center;
+                    margin: 0.25rem;
+                    img{
+                        width: 40%;
+                        height: auto;
+                        padding: 0.25rem;
+                        margin: 0.25rem;
+                        @include tablet{
+                            width: 50%;
+                            padding: 0.15rem;
+                            margin: 0.15rem;
+                        }
+                        @include mobile{
+                            display: none;
+                        }
+                    }
+                }
+                .proyectoTitulo{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    h5{
+                        font-family: "Questrial";
+                        font-size: 2rem;
+                        font-weight: 400;
+                        color: white;
+                        &:hover{
+                            font-size: 2.2rem;
+                            font-weight: 600;
+                        }
+                        @include tablet{
+                            font-size: 1.25rem;
+                            font-weight: 200;
+                            &:hover{
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                            }
+                        }
+                        @include mobile{
+                            font-size: 1.15rem;
+                            font-weight: 100;
+                            text-align: center;
+                            &:hover{
+                                font-size: 1.25rem;
+                                font-weight: 200;
+                            } 
+                        }
+                    }
+                }
+                .proyectoParrafo{
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    p{
+                        font-family: "Questrial";
+                        font-size: 1.2rem;
+                        text-align: justify;
+                        color: white;
+                        @include tablet{
+                            font-size: 0.8rem;
+                        }
+                        @include mobile{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+            .serviciosConstruccion{
+                display: grid;
+                grid-template-columns: auto, auto;
+                grid-template-rows: auto, auto;
+                background-color: #2f3133;
+                padding: 2rem;
+                margin: 0.25rem;
+                @include tablet{
+                    padding: 1rem;
+                    margin: 0.1rem;
+                }
+                .construccionImg{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 3;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                        height: auto;
+                        padding: 0.25rem;
+                        margin: 0.25rem;
+                        display: flex;
+                        @include tablet{
+                            width: 80%;
+                            padding: 0.15rem;
+                            margin: 0.15rem;
+                        }
+                        @include mobile{
+                            display: none;
+                        }
+                    }
+                }
+                .construccionTitulo{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    h5{
+                        font-family: "Questrial";
+                        font-size: 2rem;
+                        font-weight: 400;
+                        color: white;
+                        &:hover{
+                            font-size: 2.2rem;
+                            font-weight: 600;    
+                        }
+                        @include tablet{
+                            font-size: 1.25rem;
+                            font-weight: 200;
+                            &:hover{
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                            }
+                            @include mobile{
+                            font-size: 1.15rem;
+                            font-weight: 100;
+                            text-align: center;
+                            &:hover{
+                                font-size: 1.25rem;
+                                font-weight: 200;
+                                } 
+                            } 
+                        }                        
+                    }
+                }
+                .construccionParrafo{
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    p{
+                        font-family: "Questrial";
+                        font-size: 1.2rem;
+                        text-align: justify;
+                        color: white;
+                        @include tablet{
+                            font-size: 0.8rem;
+                        }
+                        @include mobile{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+            .serviciosDesarrollo{
+                display: grid;
+                grid-template-columns: auto, auto;
+                grid-template-rows: auto, auto;
+                background-color: #2f3133;
+                padding: 2rem;
+                margin: 0.25rem;
+                @include tablet{
+                    padding: 1rem;
+                    margin: 0.1rem;
+                }
+                .desarrolloImg{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 3;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                    img{
+                        width: 40%;
+                        height: auto;
+                        padding: 0.25rem;
+                        margin: 0.25rem;
+                        display: flex;
+                        @include tablet{
+                            width: 50%;
+                            padding: 0.15rem;
+                            margin: 0.15rem;
+                        }
+                        @include mobile{
+                            display: none;
+                        }
+                    }                    
+                }                
+                .desarrolloTitulo{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    h5{
+                        font-family: "Questrial";
+                        font-size: 2rem;
+                        font-weight: 400;
+                        color: white;
+                        &:hover{
+                            font-size: 2.2rem;
+                            font-weight: 600;
+                        }
+                        @include tablet{
+                            font-size: 1.25rem;
+                            font-weight: 200;
+                            &:hover{
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                            }
+                        }
+                        @include mobile{
+                            font-size: 1.15rem;
+                            font-weight: 100;
+                            text-align: center;
+                            &:hover{
+                                font-size: 1.25rem;
+                                font-weight: 200;
+                                } 
+                            } 
+                    }
+                }
+                .desarrolloParrafo{
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    p{
+                        font-family: "Questrial";
+                        font-size: 1.2rem;
+                        text-align: justify; 
+                        color: white;
+                        @include tablet{
+                            font-size: 0.8rem;
+                        }
+                        @include mobile{
+                            font-size: 0.7rem;
+                        }      
+                    }
+                }
+            }
+            .serviciosGestion{
+                display: grid;
+                grid-template-columns: auto, auto;
+                grid-template-rows: auto, auto;
+                background-color: #2f3133;
+                padding: 2rem;
+                margin: 0.25rem;
+                @include tablet{
+                    padding: 1rem;
+                    margin: 0.1rem;
+                }
+                .gestionImg{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 3;
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    img{
+                        width: 65%;
+                        height: auto;
+                        padding: 0.25rem;
+                        margin: 0.25rem;
+                        display: flex;
+                        @include tablet{
+                            width: 80%;
+                            padding: 0.15rem;
+                            margin: 0.15rem;
+                        }
+                        @include mobile{
+                            display: none;
+                        }
+                    }
+                }
+                .gestionTitulo{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    h5{
+                        font-family: "Questrial";
+                        font-size: 2rem;
+                        font-weight: 400;
+                        color: white;
+                        &:hover{
+                            font-size: 2.2rem;
+                            font-weight: 600;
+                        }
+                        @include tablet{
+                            font-size: 1.25rem;
+                            font-weight: 200;
+                            &:hover{
+                                font-size: 1.5rem;
+                                font-weight: 300;
+                            }
+                        }
+                        @include mobile{
+                            font-size: 1.15rem;
+                            font-weight: 100;
+                            text-align: center;
+                            &:hover{
+                                font-size: 1.25rem;
+                                font-weight: 200;
+                                } 
+                            } 
+                    }
+                }
+                .gestionParrafo{
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    p{
+                        font-family: "Questrial";
+                        font-size: 1.2rem;
+                        text-align: justify;
+                        color: white;
+                        @include tablet{
+                            font-size: 0.8rem;
+                        }   
+                        @include mobile{
+                            font-size: 0.7rem;
+                        }    
+                    }
+                }
+            }
+        }
+    }
+}
